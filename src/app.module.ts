@@ -9,6 +9,7 @@ import { LoggingInterceptor } from './common/interceptor/logging.interceptor';
 import { TransformInterceptor } from './common/interceptor/transform.interceptor';
 import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
+import { ProductModule } from './product/product.module';
 import 'dotenv/config';
 
 const DB_CONNECTION = process.env.DB_CONNECTION;
@@ -19,6 +20,7 @@ const DB_CONNECTION = process.env.DB_CONNECTION;
     MongooseModule.forRoot(DB_CONNECTION),
     UserModule,
     AuthModule,
+    ProductModule,
 
   ],
   controllers: [AppController],
