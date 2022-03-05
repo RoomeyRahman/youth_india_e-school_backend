@@ -11,7 +11,6 @@ import {
   HttpException,
   Headers,
   MethodNotAllowedException,
-  UseInterceptors,
 } from '@nestjs/common';
 import { UsersService } from '../services';
 import { CreateUserDTO, EmailDTO, PasswordDTO } from '../dto';
